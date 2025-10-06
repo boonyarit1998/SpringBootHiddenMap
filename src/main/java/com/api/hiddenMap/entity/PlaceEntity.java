@@ -22,6 +22,12 @@ public class PlaceEntity {
     private String name;
     private String description;
 
+    private String province;
+    private String district;
+
+    @Column(name = "sub_district")
+    private String subDistrict;
+
     @ManyToOne
     private CategoryEntity category;
 
