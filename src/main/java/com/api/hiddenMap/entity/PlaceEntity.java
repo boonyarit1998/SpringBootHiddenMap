@@ -45,7 +45,7 @@ public class PlaceEntity {
         this.createdAt = LocalDateTime.now();
     }
 
-    @PrePersist
+    @PreUpdate
     protected  void onUpdate(){
          this.updateAt = LocalDateTime.now();
     }
